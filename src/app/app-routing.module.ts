@@ -62,7 +62,7 @@ const routes: Routes = [
   {
     path: 'view/:id',
     title: `${env.appName} - Exibe umas coisas`,
-    loadChildren: () => import('./temp/view/view.module').then( m => m.ViewPageModule)
+    loadChildren: () => import('./things/view/view.module').then( m => m.ViewPageModule)
   },
   {
     path: 'cadastro',
@@ -83,7 +83,7 @@ const routes: Routes = [
   {
     path: 'camera',
     title: `${env.appName} - Tirar Foto`,
-    loadChildren: () => import('./pages/camera/camera.module').then( m => m.CameraPageModule)
+    loadChildren: () => import('./temp/camera/camera.module').then( m => m.CameraPageModule)
   },
   {
     path: '**',
